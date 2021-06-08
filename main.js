@@ -102,7 +102,7 @@ btnB1.onclick = function () {
         //Tính ngày tiếp theo của tháng 2
         switch (thangHienTai) {
             case 2:
-                if (namHienTai % 4 == 0 || namHienTai % 400 == 0) {
+                if (((namHienTai % 4 == 0) && (namHienTai % 100 != 0)) || (namHienTai % 400 == 0)) {
                     ngayHienTai <= 29
                     if (ngayHienTai > 29) {
                         alert('Tháng 2 năm nhuận chỉ có 29 ngày')
@@ -183,7 +183,7 @@ btnB1_2.onclick = function () {
         //Tính ngày tiếp theo của tháng 2
         switch (thangHienTai) {
             case 2:
-                if (namHienTai % 4 == 0 || namHienTai % 400 == 0) {
+                if (((namHienTai % 4 == 0) && (namHienTai % 100 != 0)) || (namHienTai % 400 == 0)) {
                     if (ngayHienTai > 29) {
                         alert('Tháng 2 năm nhuận chỉ có 29 ngày')
                     } else if (ngayHienTai == 1) {
@@ -259,7 +259,7 @@ btnB2.onclick = function () {
                 _ngay = 30
         }
         if (ipThang == 2) {
-            if (ipNam % 4 == 0 || ipNam % 400 == 0) {
+            if (((ipNam % 4 == 0) && (ipNam % 100 != 0)) || (ipNam % 400 == 0)) {
                 _ngay = 29
             } else {
                 _ngay = 28
