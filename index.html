@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#bai1" role="tab" aria-controls="home"
+                aria-selected="true">Bài 1</a>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#bai2" role="tab" aria-controls="profile"
+                aria-selected="false">Bài 2</a>
+        </li>
+
+
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#bai3" role="tab" aria-controls="contact"
+                aria-selected="false">Bài 3</a>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#bai4" role="tab" aria-controls="contact"
+                aria-selected="false">Bài 4</a>
+        </li>
+        <!-- <li class="nav-item" role="presentation">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#bai5" role="tab" aria-controls=""
+                aria-selected="false">Bài 5</a>
+        </li> -->
+    </ul>
+    <div class="tab-content" id="myTabContent">
+
+        <!-- BÀI 1 -->
+        <div class="tab-pane fade show active" id="bai1" role="tabpanel" aria-labelledby="home-tab">
+
+            <div class="form-group">
+                <label for="">Nhập vào ngày, tháng,năm</label>
+                <input type="text" name="" id="ngayHienTai" class="form-control" placeholder="Ngày" aria-describedby="helpId">
+                <input type="text" name="" id="thangHienTai" class="form-control" placeholder="Tháng" aria-describedby="helpId">
+                <input type="text" name="" id="namHienTai" class="form-control" placeholder="Năm" aria-describedby="helpId">
+            </div>
+            <button type="button" class="btn btn-primary" id="btnB1">Ngày sau</button>
+            <div class="ketQua" id="ketQuaB1" style="display:none">
+                <div id="ngayThangNam"></div>
+                </div>
+                <button type="button" class="btn btn-primary" id="btnB1-2">Ngày trước</button>
+                <div class="ketQua" id="ketQuaB1-2" style="display:none"></div>
+                <div id="ngayTruocDo"></div>
+            
+        </div>
+        <!-- BÀI 2 -->
+        <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="form-group">
+                <label for="">Nhập vào tháng</label>
+                <input type="text" name="" id="ipThang" class="form-control" placeholder="" aria-describedby="helpId">
+                <label for="">Nhập vào năm</label>
+                <input type="text" name="" id="ipNam" class="form-control" placeholder="" aria-describedby="helpId">
+            </div>
+
+            <button type="button" class="btn btn-primary" id="btnB2">Tháng này</button>
+            <div class="ketQua" id="ketQuaB2" style="display:none">
+                <div id="day"></div>
+            </div>
+        </div>
+        <!-- BÀI 3 -->
+        <div class="tab-pane fade" id="bai3" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="form-group">
+                <label for="">Nhập vào số nguyên có 3 chữ số</label>
+                <input type="text" name="" id="soNguyen" class="form-control" placeholder="" aria-describedby="helpId">
+            </div>
+            <button type="button" class="btn btn-primary" id="btnB3">Đếm số</button>
+            <div class="ketQua" id="ketQuaB3" style="display:none">
+                <div id="docSoNguyen"></div>
+            </div>
+        </div>
+        <!-- BÀI 4 -->
+        <div class="tab-pane fade" id="bai4" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="form-group">
+                <label for="">Nhập vào tọa độ của bạn theo dạng O(x,y)</label>
+                <br>
+                <label for="">A</label>
+                <input type="text" name="" id="OxA" class="form-control" placeholder="x" aria-describedby="helpId">
+                <input type="text" name="" id="OyA" class="form-control" placeholder="y" aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <label for="">B</label>
+                <input type="text" name="" id="OxB" class="form-control" placeholder="x" aria-describedby="helpId">
+                <input type="text" name="" id="OyB" class="form-control" placeholder="y" aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+                <label for="">C</label>
+                <input type="text" name="" id="OxC" class="form-control" placeholder="x" aria-describedby="helpId">
+                <input type="text" name="" id="OyC" class="form-control" placeholder="y" aria-describedby="helpId">
+            </div>
+            <button type="button" class="btn btn-primary" id="btnB4">Ai xa trường nhất???</button>
+            <div class="ketQua" id="ketQuaB4" style="display:none">
+                <div id="nhaXaNhat"></div>
+
+            </div>
+        </div>
+        <!-- BÀI 5 -->
+
+
+
+
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="./main.js"></script>
+</body>
+
+</html>
